@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ど偏見匿名掲示板</title>
+  <style>
+    body { font-family: sans-serif; background: #f9f9f9; padding: 20px; }
+    h2, h3 { margin: 0; }
+    .post, .reply {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    .reply { margin-left: 20px; }
+    button { margin-top: 5px; }
+    textarea, input { width: 100%; margin: 5px 0; padding: 5px; }
+    hr { margin: 20px 0; }
+  </style>
+</head>
+<body>
+
+  <h2>🔥 ど偏見匿名掲示板</h2>
+
+  <h3>📝 新規スレッド作成</h3>
+  <form id="newPostForm">
+    <input type="text" id="title" placeholder="スレタイ" required>
+    <textarea id="content" placeholder="本文" required></textarea>
+    <button type="submit">投稿する</button>
+  </form>
+
+  <hr>
+
+  <div id="postList">読み込み中...</div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
